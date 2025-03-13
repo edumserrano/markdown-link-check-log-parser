@@ -32,6 +32,8 @@ FROM mcr.microsoft.com/dotnet/sdk:9.0-alpine AS build
 WORKDIR /markdown-link-check-log-parser
 COPY ["MarkdownLinkCheckLogParser/NuGet.Config", "MarkdownLinkCheckLogParser/"]
 COPY ["MarkdownLinkCheckLogParser/src/MarkdownLinkCheckLogParserCli/MarkdownLinkCheckLogParserCli.csproj", "MarkdownLinkCheckLogParser/src/MarkdownLinkCheckLogParserCli/"]
+COPY ["MarkdownLinkCheckLogParser/Directory.Build.props", "MarkdownLinkCheckLogParser/"]
+COPY ["MarkdownLinkCheckLogParser/Directory.Packages.props", "MarkdownLinkCheckLogParser/"]
 RUN dotnet restore "MarkdownLinkCheckLogParser/src/MarkdownLinkCheckLogParserCli/MarkdownLinkCheckLogParserCli.csproj"
 COPY . .
 WORKDIR "/markdown-link-check-log-parser/MarkdownLinkCheckLogParser/src/MarkdownLinkCheckLogParserCli"
