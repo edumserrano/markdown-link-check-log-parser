@@ -27,7 +27,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     env:
       SLN_DIR: MarkdownLinkCheckLogParser
-      SLN_FILENAME: MarkdownLinkCheckLogParser.sln
+      SLN_FILENAME: MarkdownLinkCheckLogParser.slnx
       TEST_RESULTS_ARTIFACT_NAME: test-results
       CODE_COVERAGE_ARTIFACT_NAME: code-coverage-report
     steps:
