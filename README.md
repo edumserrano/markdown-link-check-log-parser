@@ -51,7 +51,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Markdown Link Check
-      uses: gaurav-nelson/github-action-markdown-link-check@v1
+      uses: gaurav-nelson/github-action-markdown-link-check@1.0.17
       with:
         use-quiet-mode: no
 ```
