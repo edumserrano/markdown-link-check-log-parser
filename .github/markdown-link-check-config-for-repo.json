@@ -38,5 +38,8 @@
       },
       "description": "Avoids 403s from GitHub docs"
     }
-  ]
+  ],
+  "retryOn429": true,
+  "retryCount": 3,
+  "fallbackRetryDelay": "3s"
 }
