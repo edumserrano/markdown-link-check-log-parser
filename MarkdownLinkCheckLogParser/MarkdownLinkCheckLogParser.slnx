@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/MarkdownLinkCheckLogParserCli/MarkdownLinkCheckLogParserCli.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/MarkdownLinkCheckLogParserCli.Tests/MarkdownLinkCheckLogParserCli.Tests.csproj" />
+  </Folder>
+</Solution>
