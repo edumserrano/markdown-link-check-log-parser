@@ -47,7 +47,7 @@ jobs:
       env:
         GITHUB_CONTEXT: ${{ toJSON(github) }}
       run: $env:GITHUB_CONTEXT
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v5
       with:
         ref: ${{ env.WORKFLOW_HEAD_SHA }}
     - name: Run markdown link check log parser with only errors set to true
@@ -141,7 +141,7 @@ jobs:
       env:
         GITHUB_CONTEXT: ${{ toJSON(github) }}
       run: $env:GITHUB_CONTEXT
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v5
       with:
         ref: ${{ env.WORKFLOW_HEAD_SHA }}
     - name: Run markdown link check log parser with only errors set to true
@@ -210,7 +210,7 @@ jobs:
       env:
         GITHUB_CONTEXT: ${{ toJSON(github) }}
       run: $env:GITHUB_CONTEXT
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v5
       with:
         ref: ${{ env.WORKFLOW_HEAD_SHA }}
     - name: Run markdown link check log parser with markdown step output
@@ -279,7 +279,7 @@ jobs:
       env:
         GITHUB_CONTEXT: ${{ toJSON(github) }}
       run: $env:GITHUB_CONTEXT
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v5
       with:
         ref: ${{ env.WORKFLOW_HEAD_SHA }}
     - name: Run markdown link check log parser with only errors set to false
@@ -373,7 +373,7 @@ jobs:
       env:
         GITHUB_CONTEXT: ${{ toJSON(github) }}
       run: $env:GITHUB_CONTEXT
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v5
       with:
         ref: ${{ env.WORKFLOW_HEAD_SHA }}
     - name: Run markdown link check log parser with only errors set to false
@@ -442,7 +442,7 @@ jobs:
       env:
         GITHUB_CONTEXT: ${{ toJSON(github) }}
       run: $env:GITHUB_CONTEXT
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v5
       with:
         ref: ${{ env.WORKFLOW_HEAD_SHA }}
     - name: Run markdown link check log parser with markdown step output
@@ -511,7 +511,7 @@ jobs:
       env:
         GITHUB_CONTEXT: ${{ toJSON(github) }}
       run: $env:GITHUB_CONTEXT
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v5
       with:
         ref: ${{ env.WORKFLOW_HEAD_SHA }}
     - name: Run markdown link check log parser with default action args
@@ -540,7 +540,7 @@ jobs:
       env:
         GITHUB_CONTEXT: ${{ toJSON(github) }}
       run: $env:GITHUB_CONTEXT
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v5
       with:
         ref: ${{ env.WORKFLOW_HEAD_SHA }}
     - name: Run markdown link check log parser with bad input
